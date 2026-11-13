@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EncounterCatalogData" format=3 uid="uid://ypnlmjc20j8b"]
+
+[ext_resource type="Script" uid="uid://cnc5fc6p1egp0" path="res://scripts/data/encounter_catalog_data.gd" id="1"]
+[ext_resource type="Resource" uid="uid://bn0ke0d648wdy" path="res://data/encounters/ancient_forest_tutorial_01.tres" id="2"]
+[ext_resource type="Resource" uid="uid://na0leaxusnxy" path="res://data/encounters/ancient_forest_scouts.tres" id="3"]
+[ext_resource type="Resource" uid="uid://bge8wifewhcg2" path="res://data/encounters/ancient_forest_guardian.tres" id="4"]
+[ext_resource type="Resource" path="res://data/encounters/ancient_forest_capture_spot.tres" id="5"]
+
+[resource]
+script = ExtResource("1")
+encounters = Array[Resource]([ExtResource("2"), ExtResource("5"), ExtResource("3"), ExtResource("4")])

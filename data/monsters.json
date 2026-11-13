@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "monsters": [
+	{
+	  "instance_id": "mon_uuid_01",
+	  "def_id": "core:species:mossling",
+	  "star": 1,
+	  "ascension_level": 0,
+	  "training_exp": 0,
+	  "location_id": "bldg_farm_01"
+	},
+	{
+	  "instance_id": "mon_uuid_02",
+	  "def_id": "core:species:thornback",
+	  "star": 1,
+	  "ascension_level": 0,
+	  "training_exp": 0,
+	  "location_id": "party_slot_1"
+	}
+  ]
+}

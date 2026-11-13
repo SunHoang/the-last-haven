@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MonsterData" format=3 uid="uid://4icj5apj6ufk"]
+
+[ext_resource type="Script" uid="uid://gltceldxj3h2" path="res://scripts/data/monster_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://qqlw5spuhwpq" path="res://scripts/data/skill_data.gd" id="2"]
+
+[sub_resource type="Resource" id="Skill_root_bind"]
+script = ExtResource("2")
+skill_id = &"root_bind"
+display_name = "Root Bind"
+description = "Gây sát thương và giảm SPD mục tiêu 30% trong 2 lượt."
+energy_cost = 40
+effect_type = &"damage_bind"
+multiplier = 1.2
+duration = 2
+
+[sub_resource type="Resource" id="Skill_healing_pollen"]
+script = ExtResource("2")
+skill_id = &"healing_pollen"
+display_name = "Healing Pollen"
+description = "Hồi máu cho cả đội và đặt Regen trong 3 lượt."
+energy_cost = 80
+effect_type = &"team_heal_regen"
+multiplier = 2.5
+duration = 3
+regen_multiplier = 0.5
+target = &"team"
+
+[resource]
+script = ExtResource("1")
+display_name = "Mossling"
+role = "Healer"
+profession = "Herbalist"
+base_atk = 12
+base_def = 12
+base_spd = 95
+skill_1 = SubResource("Skill_root_bind")
+skill_2 = SubResource("Skill_healing_pollen")
+combat_passive_id = "forest_vitality"
+combat_passive_name = "Forest Vitality"
+utility_passive_id = "herbalist_mastery"
+utility_passive_name = "Herbalist Mastery"
+utility_building = "farm"
+utility_bonus_percent = 20.0
+utility_bonus_resource = "all"

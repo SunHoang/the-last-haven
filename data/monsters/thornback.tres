@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MonsterData" format=3 uid="uid://d3rir05h244qc"]
+
+[ext_resource type="Script" uid="uid://gltceldxj3h2" path="res://scripts/data/monster_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://qqlw5spuhwpq" path="res://scripts/data/skill_data.gd" id="2"]
+
+[sub_resource type="Resource" id="Skill_bark_armor"]
+script = ExtResource("2")
+skill_id = &"bark_armor"
+display_name = "Bark Armor"
+description = "Tạo khiên bằng 20% HP tối đa và tăng DEF 25% trong 2 lượt."
+energy_cost = 40
+effect_type = &"self_shield_defense"
+duration = 2
+shield_percent = 0.2
+defense_modifier = 0.25
+target = &"self"
+
+[sub_resource type="Resource" id="Skill_thorn_charge"]
+script = ExtResource("2")
+skill_id = &"thorn_charge"
+display_name = "Thorn Charge"
+description = "Gây sát thương mạnh lên một mục tiêu."
+energy_cost = 80
+multiplier = 2.2
+
+[resource]
+script = ExtResource("1")
+monster_id = &"thornback"
+display_name = "Thornback"
+role = "Bruiser"
+base_hp = 120
+base_atk = 18
+base_def = 14
+base_spd = 90
+passive_id = &"thorny_hide"
+passive_name = "Thorny Hide"
+profession = "Wood Gatherer"
+utility_building = &"lumber_mill"
+utility_bonus_percent = 20.0
+utility_bonus_resource = &"wood"
+skills = Array[Resource]([SubResource("Skill_bark_armor"), SubResource("Skill_thorn_charge")])
+exp_reward = 12

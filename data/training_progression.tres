@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="TrainingProgressionData" format=3 uid="uid://dlvjoto1cksn7"]
+
+[ext_resource type="Script" uid="uid://bfldoir4774kb" path="res://scripts/data/training_progression_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://bmamleof4x842" path="res://scripts/data/training_essence_data.gd" id="2"]
+
+[sub_resource type="Resource" id="TrainingEssence_basic"]
+script = ExtResource("2")
+item_id = &"training_essence"
+display_name = "Tinh chất Huấn luyện"
+
+[sub_resource type="Resource" id="TrainingEssence_greater"]
+script = ExtResource("2")
+item_id = &"greater_training_essence"
+display_name = "Tinh chất Huấn luyện Cao cấp"
+exp_value = 200
+
+[sub_resource type="Resource" id="TrainingEssence_superior"]
+script = ExtResource("2")
+item_id = &"superior_training_essence"
+display_name = "Tinh chất Huấn luyện Thượng hạng"
+exp_value = 500
+
+[sub_resource type="Resource" id="TrainingEssence_growth_core"]
+script = ExtResource("2")
+item_id = &"growth_core"
+display_name = "Lõi Trưởng thành"
+exp_value = 1500
+
+[sub_resource type="Resource" id="TrainingEssence_apex"]
+script = ExtResource("2")
+item_id = &"apex_essence"
+display_name = "Tinh chất Apex"
+exp_value = 5000
+
+[resource]
+script = ExtResource("1")
+training_essences = Array[Resource]([SubResource("TrainingEssence_basic"), SubResource("TrainingEssence_greater"), SubResource("TrainingEssence_superior"), SubResource("TrainingEssence_growth_core"), SubResource("TrainingEssence_apex")])

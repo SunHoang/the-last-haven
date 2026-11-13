@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "starting_currencies": {
+    "gold": 0,
+    "soul_dust": 0
+  },
+  "starting_items": {
+    "core:item:summon_sigil": 1,
+    "core:item:monster_contract_basic": 3
+  },
+  "starting_monsters": [
+    {
+      "instance_id": "mon_uuid_01",
+      "def_id": "core:species:mossling",
+      "star": 1,
+      "ascension_level": 0,
+      "training_exp": 0,
+      "location_id": "party_slot_1"
+    },
+    {
+      "instance_id": "mon_uuid_02",
+      "def_id": "core:species:thornback",
+      "star": 1,
+      "ascension_level": 0,
+      "training_exp": 0,
+      "location_id": "party_slot_2"
+    },
+    {
+      "instance_id": "mon_uuid_03",
+      "def_id": "core:species:mossling",
+      "star": 1,
+      "ascension_level": 0,
+      "training_exp": 0,
+      "location_id": "bldg_farm_01"
+    },
+    {
+      "instance_id": "mon_uuid_04",
+      "def_id": "core:species:thornback",
+      "star": 1,
+      "ascension_level": 0,
+      "training_exp": 0,
+      "location_id": "bldg_lumber_01"
+    }
+  ]
+}

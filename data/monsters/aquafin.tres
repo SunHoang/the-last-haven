@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MonsterData" format=3 uid="uid://betayx264ylxo"]
+
+[ext_resource type="Script" uid="uid://gltceldxj3h2" path="res://scripts/data/monster_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://qqlw5spuhwpq" path="res://scripts/data/skill_data.gd" id="2"]
+
+[sub_resource type="Resource" id="Skill_aqua_mist"]
+script = ExtResource("2")
+skill_id = &"aqua_mist"
+display_name = "Aqua Mist"
+description = "Hồi máu cho một đồng minh và gỡ một hiệu ứng xấu."
+energy_cost = 40
+effect_type = &"heal_cleanse"
+multiplier = 2.0
+target = &"ally"
+
+[sub_resource type="Resource" id="Skill_tidal_veil"]
+script = ExtResource("2")
+skill_id = &"tidal_veil"
+display_name = "Tidal Veil"
+description = "Tạo khiên bằng 12% HP tối đa cho cả đội trong 2 lượt."
+energy_cost = 80
+effect_type = &"team_shield"
+duration = 2
+shield_percent = 0.12
+target = &"team"
+
+[resource]
+script = ExtResource("1")
+monster_id = &"aquafin"
+display_name = "Aquafin"
+element = "Water"
+role = "Support"
+base_atk = 14
+base_def = 14
+passive_id = &"tidal_rhythm"
+passive_name = "Tidal Rhythm"
+profession = "Fisher"
+utility_building = &"farm"
+utility_bonus_percent = 25.0
+utility_bonus_resource = &"food"
+skills = Array[Resource]([SubResource("Skill_aqua_mist"), SubResource("Skill_tidal_veil")])
+exp_reward = 12

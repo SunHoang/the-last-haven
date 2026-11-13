@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ExpeditionRegionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/expedition_region_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+region_id = &"ancient_forest"
+display_name = "Rừng Cổ Đại"
+description = "Một khu rừng giàu thức ăn, thảo dược và sợi. Nhà thảo dược tìm thêm vật liệu tại đây."
+durations_minutes = Array[int]([15, 30, 120])
+base_rewards_per_30_minutes = {"food": 10, "herbs": 4, "fiber": 6}
+preferred_profession = "Herbalist"
+specialization_bonus_percent = 25
+training_exp_per_30_minutes = 15

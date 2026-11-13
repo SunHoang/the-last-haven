@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="DefaultRosterData" format=3 uid="uid://c6jfccl7n50vj"]
+
+[ext_resource type="Script" uid="uid://mof7yubp7q3d" path="res://scripts/data/default_roster_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+team_ids = Array[String](["mossling", "thornback"])
+starting_basic_contracts = 0

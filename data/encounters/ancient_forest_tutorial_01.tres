@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3 uid="uid://bn0ke0d648wdy"]
+
+[ext_resource type="Script" uid="uid://kf3x5jgy2y6r" path="res://scripts/data/encounter_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://cp1v7br33quwo" path="res://scripts/data/encounter_enemy_data.gd" id="2"]
+
+[sub_resource type="Resource" id="Enemy_barkbeetle"]
+script = ExtResource("2")
+monster_id = &"barkbeetle"
+
+[resource]
+script = ExtResource("1")
+encounter_id = &"ancient_forest_tutorial_01"
+display_name = "Ancient Forest · Trận hướng dẫn"
+enemies = Array[Resource]([SubResource("Enemy_barkbeetle")])
